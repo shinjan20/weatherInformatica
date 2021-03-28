@@ -1,0 +1,102 @@
+export const Data=[
+    [{
+       city:'London',
+       country:'GB',
+       image:"https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+        city:'New York',
+        country:'US',
+        image:"https://images.unsplash.com/photo-1532960401447-7dd05bef20b0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8bmV3JTIweW9yayUyMGNpdHl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+    },
+    {
+       city:'Toronto',
+       country:'CA',
+       image:"https://www.tripsavvy.com/thmb/d5CKyHWMzBgSyKsjH5CqdVul1d4=/1800x1200/filters:fill(auto,1)/toronto-0196f862595c45e498935329f7446859.jpg"
+    },
+    {
+        city:'New Delhi',
+        country:'IN',
+        image:'https://cdn.britannica.com/37/189837-050-F0AF383E/New-Delhi-India-War-Memorial-arch-Sir.jpg'
+    },
+    {
+        city:'Mumbai',
+        country:'IN',
+        image:"https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"
+    }],
+    [{
+        city:'Tokyo',
+        country:'JP',
+        image:"https://cdn-image.departures.com/sites/default/files/1576002985/header-tokyo-japan-LUXETOKYO1219.jpg"
+    },
+    {
+        city:'Paris',
+        country:'FR',
+        image:"https://upload.wikimedia.org/wikipedia/en/4/41/Paris%2CFrance.jpg"
+    },
+    {
+        city:'Seoul',
+        country:'KR',
+        image:"https://www.tripsavvy.com/thmb/lFHEqrURSwvgAfNRNllI6RQuyYk=/3672x3672/smart/filters:no_upscale()/illuminated-buildings-and-city-street-at-night-902452584-94fe3f3db5374dbbb82cc2372534be28.jpg"
+    },
+    {
+        city:'Munich',
+        country:'DE',
+        image:"https://cdn.muenchen-p.de/.imaging/stk/responsive/galleryLarge/dms/shutterstock/neues-rathaus-marienplatz/document/neues-rathaus-marienplatz.jpg"
+    },
+    {
+        city:'Bangkok',
+        country:'TH',
+        image:"https://www.tripsavvy.com/thmb/IkoPZKwM5BmhWB-064flnLZWylo=/3804x3804/smart/filters:no_upscale()/bangkok-at-sunset-5bd5f2f746e0fb005818e042.jpg"
+    }],
+    [{
+        city:'Lagos',
+        country:'NG',
+        image:"https://cdn.britannica.com/36/191736-050-5726A7F4/view-Lagos-Nigeria.jpg"
+    },
+    {
+        city:'Rio de Janeiro',
+        country:'BR',
+        image:"https://airlines-airports.com/wp-content/uploads/2016/07/Brazil-Rio-de-Janeiro.jpg"
+    },
+    {
+        city:'Madrid',
+        country:'ES',
+        image:"https://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Spain/Madrid/gran-via-madrid-night-lead-guide.jpg"
+    },
+    {
+        city:'Buenos Aires',
+        country:'AR',
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIri0ZFT1VDMByzH6AqnO261wZwlLJDz7wzw&usqp=CAU"
+    },
+    {
+        city:'Cape Town',
+        country:'ZA',
+        image:"https://media.timeout.com/images/105237728/image.jpg"
+    }],
+    [{
+        city:'Sydney',
+        country:'AU',
+        image:"https://i0.wp.com/premierfilmdistribution.com.au/wp-content/uploads/2017/10/modern-sydney-opera-house-australia-wallpaper-background-free-1600x1080.jpg?ssl=1"
+    },
+    {
+        city:'Mexico City',
+        country:'MX',
+        image:"https://cdn.getyourguide.com/img/location/5c9f29710b6f9.jpeg/88.jpg"
+    },
+    {
+        city:'Milan',
+        country:'IT',
+        image:"https://cdn.britannica.com/32/20032-050-B0CF9E76/Shoppers-Galleria-Vittorio-Emanuele-II-Italy-Milan.jpg"
+    },
+    {
+        city:'Cairo',
+        country:'EG',
+        image:"https://d3rr2gvhjw0wwy.cloudfront.net/uploads/mandators/49581/file-manager/egypt-cairo.jpg"
+    },
+    {
+        city:'Kuala Lumpur',
+        country:'MY',
+        image:"https://a.travel-assets.com/findyours-php/viewfinder/images/res70/473000/473015-Kuala-Lumpur.jpg"
+    }]
+]

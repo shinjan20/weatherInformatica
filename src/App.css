@@ -1,0 +1,132 @@
+body{
+  margin:0;
+}
+.header{
+  font-family:'Poppins',sans-serif;
+}
+.header{
+  position:relative;
+  animation-name: anifirst;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes anifirst{
+  0%{
+    opacity:0%
+  };
+  100%{
+    opacity:100%
+  }
+}
+.header:hover{
+  color:honeydew;
+  cursor: pointer;
+}
+.weatherstats{
+  margin:20px;
+  display:flex;
+}
+.weatherstats:hover{
+  color:palegreen;
+}
+.weatherstatsfirst{
+  width:30%;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weatherstatssecond{
+  width:70%;
+  margin:auto;
+  display: flex;
+  justify-content: space-around;
+}
+.BODY{
+  font-family:'Poppins',sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1542671073-18841af6743e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: honeydew;
+}
+.cards:hover{
+  animation: shake 1s;
+  animation-iteration-count: 1;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+input{
+  width:100%;border-radius:5px;background-color:inherit;border:none;border-bottom:3px solid white;font-size:25px;font-weight:bold;font-family:'Poppins',sans-serif;z-index: 100;
+}
+input:focus{
+  outline: none;
+  border-bottom: 4px solid palegreen;
+}
+.label{
+  position: relative;
+  bottom: 30px;
+}
+input:focus+.label{
+  transform: translateY(-30px);
+  font-size: 11px;
+  color:palegreen;
+}
+.scrolltop{
+  opacity:0%;
+}
+.scrolltop.active{
+  width:50px;height:50px;background-color:palegreen;border-radius:50%;display:flex;justify-content:center;align-items:center;position:fixed;right:5px;bottom:25vh;cursor:pointer;opacity:0%;
+  opacity:100%;
+}
+.scrolltop.active:hover{
+  background-color:white;
+  color:palegreen;
+}
+.footer1{
+  margin:0;
+  padding:0;
+  height:20vh;
+  background-color:palegreen;
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer1:hover{
+  color: honeydew;
+}
+.innerfooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.innerfooter:hover{
+  animation-name: anilast;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes anilast{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
