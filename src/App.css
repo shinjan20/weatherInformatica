@@ -2,10 +2,15 @@ body{
   margin:0;
 }
 .header{
+  background-color:palegreen;
+  height:10vh;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 50px rgba(0,0,0, 0.8);
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
   font-family:'Poppins',sans-serif;
-}
-.header{
-  position:relative;
   animation-name: anifirst;
   animation-duration: 2s;
   animation-iteration-count: 1;
@@ -24,27 +29,46 @@ body{
   cursor: pointer;
 }
 .weatherstats{
-  margin:20px;
   display:flex;
+  margin:5px;
+  height: 45vh;
 }
-.weatherstats:hover{
-  color:palegreen;
-}
+
 .weatherstatsfirst{
   width:30%;
+  height: 40%;
   margin:auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  animation: anifirst 2s ease-in-out 1;
 }
 .weatherstatssecond{
   width:70%;
+  height: 100%;
   margin:auto;
   display: flex;
   justify-content: space-around;
 }
+.weatherstatssecond .section{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-around;
+  animation: anifirst 2s ease-in-out 1;
+}
+@keyframes anifirst{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 .BODY{
   font-family:'Poppins',sans-serif;
+  font-weight: bold;
   background-image: url("https://images.unsplash.com/photo-1542671073-18841af6743e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80");
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,6 +76,28 @@ body{
   flex-direction: column;
   color: honeydew;
 }
+.Form{
+  margin:20px auto;
+  width:40%;
+  display:flex;
+  flex-direction:column
+}
+.cardlistrow{
+  display:flex;
+  justify-content:space-around
+}
+.cardlist{
+  display:flex;
+  justify-content:space-around;
+  margin:10px 0
+}
+.cards{
+    height:300px;
+    width:250px;
+    display:flex;
+    flex-direction:column;
+    align-items:center
+  }
 .cards:hover{
   animation: shake 1s;
   animation-iteration-count: 1;
@@ -69,28 +115,33 @@ body{
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+form{
+  position: relative;
+}
 input{
-  width:100%;border-radius:5px;background-color:inherit;border:none;border-bottom:3px solid white;font-size:25px;font-weight:bold;font-family:'Poppins',sans-serif;z-index: 100;
+  width:100%;border-radius:5px;background-color:inherit;border:none;border-bottom:3px solid white;font-size:25px;font-weight:bold;font-family:'Poppins',sans-serif;z-index:100;
 }
 input:focus{
   outline: none;
   border-bottom: 4px solid palegreen;
 }
 .label{
-  position: relative;
-  bottom: 30px;
+  position: absolute;
+  bottom: 10px;
 }
-input:focus+.label{
-  transform: translateY(-30px);
+input:focus+.label,
+input:not(:focus):valid+.label
+{
+  transform: translateY(-35px);
   font-size: 11px;
   color:palegreen;
+  transition: 0.4s;
 }
 .scrolltop{
   opacity:0%;
 }
 .scrolltop.active{
-  width:50px;height:50px;background-color:palegreen;border-radius:50%;display:flex;justify-content:center;align-items:center;position:fixed;right:5px;bottom:25vh;cursor:pointer;opacity:0%;
-  opacity:100%;
+  width:50px;height:50px;background-color:palegreen;border-radius:50%;display:flex;justify-content:center;align-items:center;position:fixed;right:5px;bottom:25vh;cursor:pointer;opacity:100%;
 }
 .scrolltop.active:hover{
   background-color:white;
@@ -99,7 +150,7 @@ input:focus+.label{
 .footer1{
   margin:0;
   padding:0;
-  height:20vh;
+  height:15vh;
   background-color:palegreen;
   font-family: 'Poppins';
   display: flex;

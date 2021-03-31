@@ -1,0 +1,54 @@
+@media(max-width:1100px)
+{
+    .App
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardlistrow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardlist{
+        display: flex;
+        flex-direction: column;
+    }
+    .weatherstats{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .weatherstatsfirst{
+        width:100%;
+    }
+    .weatherstatssecond{
+        margin:10px auto;
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .weatherstatssecond .section{
+        width:100%;
+        height: 100%;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: small;
+    }
+    .Form{
+        margin:25px auto;
+        width:70%;
+        height: 100%;
+      }
+    
+    .scrolltop.active{
+        width:50px;height:50px;position:fixed;right:40px;bottom:25vh;z-index: 100;
+      }
+    .footer1{
+        height:10vh;
+    }
+}
