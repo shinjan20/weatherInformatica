@@ -29,7 +29,7 @@ function Appbody({lat,long}) {
         animate:true
       }
     useEffect(() => {
-        Axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=53e82d9887e86e231a783b8ee5641c2c`).then((data)=>{
+        Axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${process.env.API_KEY}`).then((data)=>{
             setName(data.data.name);
             setCountry(data.data.sys.country);
             setTemp(Math.round(data.data.main.temp));
