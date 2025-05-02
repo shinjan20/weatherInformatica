@@ -24,10 +24,7 @@ body{
     opacity:100%
   }
 }
-.header:hover{
-  color:honeydew;
-  cursor: pointer;
-}
+
 .weatherstats{
   display:flex;
   margin:5px;
@@ -36,8 +33,6 @@ body{
 
 .weatherstatsfirst{
   width:30%;
-  height: 40%;
-  margin:auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,6 +53,8 @@ body{
   justify-content: space-around;
   animation: anifirst 2s ease-in-out 1;
 }
+
+
 @keyframes anifirst{
   0%{
     opacity: 0;
@@ -76,16 +73,30 @@ body{
   flex-direction: column;
   color: honeydew;
 }
-.Form{
-  margin:20px auto;
-  width:40%;
-  display:flex;
-  flex-direction:column
+.Form {
+  margin: 25px auto 5px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  position: relative;
 }
+
+/* Ensure input takes full width of Form */
+.Form input {
+  width: 100%;
+}
+
 .cardlistrow{
   display:flex;
-  justify-content:space-around
+  justify-content:space-around;
+  transition: margin-top 0.3s ease;
 }
+
+.cardlistrow.shift-down {
+  margin-top: 50px;
+}
+
 .cardlist{
   display:flex;
   justify-content:space-around;
@@ -96,7 +107,8 @@ body{
     width:250px;
     display:flex;
     flex-direction:column;
-    align-items:center
+    align-items:center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 .cards:hover{
   animation: shake 1s;
@@ -128,6 +140,11 @@ input:focus{
 .label{
   position: absolute;
   bottom: 10px;
+  align-self: flex-start;
+  text-align: left;
+  width: 100%;
+  margin-top: 4px;
+  font-size: 0.8rem;
 }
 input:focus+.label,
 input:not(:focus):valid+.label
@@ -158,21 +175,14 @@ input:not(:focus):valid+.label
   justify-content: center;
   align-items: center;
 }
-.footer1:hover{
-  color: honeydew;
-}
+
 .innerfooter{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.innerfooter:hover{
-  animation-name: anilast;
-  animation-timing-function: ease-in-out;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
+
 @keyframes anilast{
   0%{
     opacity:0;
@@ -180,4 +190,114 @@ input:not(:focus):valid+.label
   100%{
     opacity: 100%;
   }
+}
+
+/* Autocomplete suggestions aligned centrally under the input */
+.autocomplete-suggestions {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* vertical layout */
+  gap: 6px;
+  list-style: none;
+  padding: 10px;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 2px auto 5px;
+}
+
+.autocomplete-suggestions li {
+  padding: 5px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.autocomplete-suggestions li:hover {
+  color: palegreen;
+}
+
+.autocomplete-suggestions .loading-item {
+  cursor: default;
+  transition: margin-top 0.3s ease;
+}
+
+/* Wrapper for the whole site */
+#page-wrapper {
+  transition: opacity 0.3s ease;
+}
+
+/* Add this to your existing CSS */
+
+.scrolltop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.scrolltop:hover {
+  transform: scale(1.2);
+}
+
+.scrolltop.active {
+  opacity: 1;
+}
+
+.scrolltop-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);  /* Semi-transparent black */
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;  /* Prevent overlay from blocking clicks */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scrolltop:hover ~ .scrolltop-overlay {
+  opacity: 1;
+}
+
+.weatherbtn {
+  background-color: palegreen;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.weatherbtn:hover {
+  background-color: white;
+  color: palegreen;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.cards-container.shift-down {
+  margin-top: 220px; /* Adjust this as needed */
+  transition: margin-top 0.3s ease;
+}
+
+.cards-container.shift-down-loading {
+  margin-top: 50px; /* Adjust this as needed */
+  transition: margin-top 0.3s ease;
+}
+
+.cards-container {
+  transition: margin-top 0.3s ease;
 }

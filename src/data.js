@@ -27,7 +27,7 @@ export const Data=[
     [{
         city:'Tokyo',
         country:'JP',
-        image:"https://cdn-image.departures.com/sites/default/files/1576002985/header-tokyo-japan-LUXETOKYO1219.jpg"
+        image:"https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg"
     },
     {
         city:'Paris',
@@ -42,7 +42,7 @@ export const Data=[
     {
         city:'Munich',
         country:'DE',
-        image:"https://cdn.muenchen-p.de/.imaging/stk/responsive/galleryLarge/dms/shutterstock/neues-rathaus-marienplatz/document/neues-rathaus-marienplatz.jpg"
+        image:"https://images.pexels.com/photos/4213371/pexels-photo-4213371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
         city:'Bangkok',
